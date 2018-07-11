@@ -1,0 +1,114 @@
+body{
+  background-color: #f6f6f6;
+}
+.clearfix {
+  clear:both;
+}
+
+.btn {
+  margin: 10px;
+  height: 120px;
+  width:120px; 
+  background-color: dimgrey;
+  border-radius:50%;
+  color: white;
+  font-size: 20px;
+  border:none;
+  outline:none;
+}
+
+.btn:hover {
+  background-color: green;
+  cursor:pointer;
+  transition: 0.6s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.game__message {
+  display: block;
+  margin: 0 auto;     
+  text-align: center;
+  background-color: lightblue;
+  width: 500px;
+  height: 130px;
+  border: solid 2px black;
+  text-transform: uppercase;
+  overflow:auto;
+}
+
+#playerScore , #ComputerScore {
+  font-size: 50px;
+  padding: 10px;
+  
+}
+
+.score__header{
+  text-align: center;
+}
+
+.score__board {
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+    
+}
+
+h3 {
+  font-size:25px;
+  padding: 0 10px;
+}
+.win {
+  color: green;
+}
+.lose {
+  color: red;
+}
+
+.counter {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#roundCounter{
+  font-size: 50px;
+  display: block;
+  margin-left:auto;
+}
+
+
+.btn-1 {
+  margin: 10px;
+  background-color: dimgrey;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border:none;
+  outline:none;
+  color: white;
+  font-size: 20px;
+}
+.reset{
+  background-color: #A52A2A;
+}
+
+.new__game{
+  background-color: #1E90FF;
+}
+
+.btn__group {
+  display: flex;
+  justify-content: center;
+}
+.reset:hover {
+  background-color: red;
+  transition: 0.7s;
+}
+.new__game:hover {
+  background-color: blue;
+  transition: 0.7s;
+}
