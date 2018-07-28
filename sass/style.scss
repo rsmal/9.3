@@ -1,64 +1,55 @@
-body{
+body {
   background-color: #f6f6f6;
 }
 .clearfix {
-  clear:both;
+  clear: both;
 }
-
 .btn {
   margin: 10px;
   height: 120px;
-  width:120px; 
+  width: 120px;
   background-color: dimgrey;
-  border-radius:50%;
+  border-radius: 50%;
   color: white;
   font-size: 20px;
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
 }
-
 .btn:hover {
   background-color: green;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.6s;
 }
-
 .container {
   display: flex;
   justify-content: center;
 }
-
 .game__message {
   display: block;
-  margin: 0 auto;     
+  margin: 0 auto;
   text-align: center;
   background-color: lightblue;
   width: 500px;
   height: 130px;
   border: solid 2px black;
   text-transform: uppercase;
-  overflow:auto;
+  overflow: auto;
 }
-
-#playerScore , #ComputerScore {
+#playerScore,
+#ComputerScore {
   font-size: 50px;
   padding: 10px;
-  
 }
-
-.score__header{
+.score__header {
   text-align: center;
 }
-
 .score__board {
   display: flex;
   justify-content: center;
   margin-left: 2%;
-    
 }
-
 h3 {
-  font-size:25px;
+  font-size: 25px;
   padding: 0 10px;
 }
 .win {
@@ -67,39 +58,33 @@ h3 {
 .lose {
   color: red;
 }
-
 .counter {
   text-align: center;
   display: block;
   margin: 0 auto;
 }
-
-#roundCounter{
+#roundCounter {
   font-size: 50px;
   display: block;
-  margin-left:auto;
+  margin-left: auto;
 }
-
-
 .btn-1 {
   margin: 10px;
   background-color: dimgrey;
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
   color: white;
   font-size: 20px;
 }
-.reset{
+.reset {
   background-color: #A52A2A;
 }
-
-.new__game{
+.new__game {
   background-color: #1E90FF;
 }
-
 .btn__group {
   display: flex;
   justify-content: center;
@@ -111,4 +96,93 @@ h3 {
 .new__game:hover {
   background-color: blue;
   transition: 0.7s;
+}
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: yourAnimation 1s forwards 0s ease;
+}
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.show {
+  display: block;
+}
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(-50%);
+    background: #c2d4d8;
+  }
+  100% {
+    transform: rotate(0) translateY(50%);
+    background: #dbe9d8;
+  }
+}
+#modal-text {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  animation: yourAnimation2 1s forwards 0s ease;
+}
+@keyframes yourAnimation2 {
+  0% {
+    transform: rotate(0) scale(1);
+    color: black;
+  }
+  100% {
+    transform: rotate(0) scale(1.5);
+    color: #720818;
+  }
+}
+#modal-text2 {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+table {
+  width: 100%;
+}
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0px;
 }

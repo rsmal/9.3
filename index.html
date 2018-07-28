@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Robert</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <title>A Pen by Robert</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <div class="container">
-<button class="test btn rock" id="rock">ROCK</button>
-<button class=" test btn paper" id="paper">PAPER</button>
-<button class=" test btn scissors" id="scissors">SCISSORS</button>
-</div>
-
-<h2 class='score__header'>SCORE BOARD</h2>
-<div class="score__board">
-  <h3 class="win">Your score</h3>
-<div id="playerScore"></div>
-<div id="ComputerScore"></div> 
-  <h3 class="lose">Computer Score</h3>
-</div>
-
-<div class="counter"> 
-  <h2 class='counter__header' >Round Counter</h2>
-<div id="roundCounter"> </div>
-</div>
-
-<div class="game__message" id="game__message"></div>
-
-<div class="btn__group">
-<button class="btn-1 reset" id="reset">RESET</button>
-<button class="btn-1 new__game" id="new_game">NEW GAME</button>
-</div>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+    <button class="player-move btn rock" id="rock">ROCK</button>
+    <button class="player-move btn paper" id="paper">PAPER</button>
+    <button class="player-move btn scissors" id="scissors">SCISSORS</button>
+  </div>
+  <h2 class='score__header'>SCORE BOARD</h2>
+  <div class="score__board">
+    <h3 class="win">Your score</h3>
+    <div id="playerScore"></div>
+    <div id="ComputerScore"></div>
+    <h3 class="lose">Computer Score</h3>
+  </div>
+  <div class="counter">
+    <h2 class='counter__header'>Round Counter</h2>
+    <div id="roundCounter"></div>
+  </div>
+  <div class="game__message" id="game__message"></div>
+  <div class="btn__group">
+    <button class="btn-1 reset" id="reset">RESET</button>
+    <button class="btn-1 new__game" id="new_game">NEW GAME</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content"> <span id="modal-span" class="close">&times;</span>
+      <p id='modal-text'></p>
+      <p id='modal-text2'></p>
+      <table id="#tableResult">
+        <tr>
+          <th>Round</th>
+          <th>Player Move</th>
+          <th>Computer Move</th>
+          <th>Result</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
